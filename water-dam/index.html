@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tama wodna</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="menu.js"defer></script>
+    <script src="https://kit.fontawesome.com/9fd1453f47.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside>
+        <div class="menu-close"><i class="fa-solid fa-xmark"></i></div>
+            <div class="menuInput">
+                <div class='menuSection'>
+                    <label for="damAFlow">Tama wpływająca - A</label>
+                    <p>20%</p>
+                </div>
+                <input type="range" id="damAFlow" min="0" max="100" step="1" value="50">
+            </div>
+            <div class="menuInput">
+               <div class='menuSection'>
+                    <label for="damBFlow">Tama wypływająca - B</label>
+                    <p>20%</p>
+                </div>
+                <input type="range" id="damBFlow" min="0" max="100" step="1" value="50">
+            </div>
+            <div class="menuInput">
+              <div class='menuSection'>
+                    <label for="float">Przepływ wody</label>
+                    <p>20%</p>
+                </div>
+                <input type="range" id="float" min="0" max="25" step="1" value="12">
+            </div>
+    </aside>
+    <div class="menu-button"><i class="fa-solid fa-bars"></i></div>
+
+    
+    <canvas id="main" width="1600" height="900">Symulacja rzeki</canvas>
+    <canvas id="dams" width="1600" height="900">Tamy</canvas>
+    <canvas id="background" width="1600" height="900">Tło</canvas>
+    
+
+</body>
+</html>
